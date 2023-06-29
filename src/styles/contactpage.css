@@ -1,0 +1,22 @@
+.contact_banner_section{
+    background-image: url(../images/ContactBanner.png);
+    height: 45vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_title{
+    display: block;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.contact_logo{
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+}
