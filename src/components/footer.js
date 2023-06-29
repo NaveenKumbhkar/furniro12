@@ -64,7 +64,7 @@ function Footer() {
         </div>
       </div>
       <hr className="footer_hr" />
-      <span className="footer_copywrite">&copy; 2023 furino. All rights reverved.</span>
+      <span className="footer_copywrite">&copy; 2023 Furino. All rights reverved.</span>
     </div>
   );
 }
