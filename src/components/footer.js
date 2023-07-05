@@ -54,7 +54,7 @@ function Footer() {
           <span className="footer_link_title">Newsletter</span>
           <br />
           <span className="footer_link">
-            <input
+            <input type="email"
               className="footer_email_subscription"
               placeholder="Enter Your Email Address"
             />

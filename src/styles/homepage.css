@@ -37,6 +37,11 @@
     padding: 1rem 3rem;
     background-color: #B88E2F;
     text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.sub_hero_box_button:hover{
+    background-color: #fdb100;
 }
 
 .sub_hero_box_button a{
