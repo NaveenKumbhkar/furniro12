@@ -41,7 +41,7 @@ function Navbar() {
                 <Link to=""><img src={wishlist} className="navbar_icon"/></Link>
             </li>
             <li>
-                <Link to=""><img src={cart} className="navbar_icon"/></Link>
+                <Link to="/cart"><img src={cart} className="navbar_icon"/></Link>
             </li>
         </ul>
     </div>

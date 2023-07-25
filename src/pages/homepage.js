@@ -48,6 +48,9 @@ function HomePage() {
             </div>
             </div>
         </div>
+        <div className="gallery_div">
+
+        </div>
         </div>
     );
 }
