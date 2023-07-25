@@ -50,3 +50,48 @@
     font-size: 14px;
     font-weight: bold;
 }
+
+/*browse range div*/
+
+.browse_range_div{
+    margin: 2.5rem auto;
+}
+
+.browse_range_div_name{
+    text-align: center;
+    display: block;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.browse_range_div_sentence{
+    text-align: center;
+    display: block;
+}
+
+.browse_range_div_main_card{
+    margin: 0;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.browse_range_div_card{
+    height: fit-content;
+    width: fit-content;
+    flex-direction: column;
+}
+
+.browse_range_div_card{
+    width: 50vh;
+}
+
+.browse_range_div_card_name{
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: large;
+}

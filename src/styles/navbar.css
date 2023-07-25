@@ -6,6 +6,10 @@
     align-items: center;
     gap: 2rem;
     padding: 1rem 5rem;
+    position: fixed; /* Add fixed position */
+    top: 0; 
+    width: 92%;
+    z-index: 999;
 }
 
 .navbar ul{
@@ -38,4 +42,12 @@
 .nav_logo_img{
     height: 30px;
     padding-right: .5rem;
+}
+
+.navbar_icon{
+    width: 28px;
+}
+
+body {
+    padding-top: 70px; /* Adjust the value as needed */
 }
