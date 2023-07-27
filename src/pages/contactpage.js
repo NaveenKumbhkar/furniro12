@@ -1,7 +1,7 @@
 import "../styles/contactpage.css";
 import logo from "../images/logo.png";
 import Certification from "../components/certification";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function ContactPage() {
   return (
