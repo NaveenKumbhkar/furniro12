@@ -8,7 +8,7 @@ function ContactPage() {
     <div>
       <div className="contact_banner_section">
         <div>
-          <img className="contact_logo" src={logo} /> <br />
+          <img alt="" className="contact_logo" src={logo} /> <br />
           <span className="contact_title">contact</span>
         </div>
       </div>

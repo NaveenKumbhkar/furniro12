@@ -35,15 +35,15 @@ function HomePage() {
 
             <div className="browse_range_div_main_card">
             <div className="browse_range_div_card">
-                <img className="browse_range_div_card" src={dining} />
+                <img alt="" className="browse_range_div_card" src={dining} />
                 <span className="browse_range_div_card_name">dining</span>
             </div>
             <div className="browse_range_div_card">
-                <img className="browse_range_div_card" src={living} />
+                <img alt="" className="browse_range_div_card" src={living} />
                 <span className="browse_range_div_card_name">living</span>
             </div>
             <div className="browse_range_div_card">
-                <img className="browse_range_div_card" src={bedroom} />
+                <img alt="" className="browse_range_div_card" src={bedroom} />
                 <span className="browse_range_div_card_name">bedroom</span>
             </div>
             </div>

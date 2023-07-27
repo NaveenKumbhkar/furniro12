@@ -9,7 +9,7 @@ function Cart(){
         <div>
             <div className="cart_banner_section">
                 <div>
-                <img className="cart_logo" src={logo} /> <br />
+                <img alt="" className="cart_logo" src={logo} /> <br />
                 <span className="cart_title">Cart</span>
                 </div>
             </div>

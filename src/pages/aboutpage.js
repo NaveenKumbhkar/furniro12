@@ -8,13 +8,13 @@ function AboutPage() {
     <div>
       <div className="about_banner_section">
         <div>
-          <img className="about_logo" src={logo} /> <br />
+          <img alt="" className="about_logo" src={logo} /> <br />
           <span className="about_title">about us</span>
         </div>
       </div>
       <div className="about_story_section">
         <div className="sub_story_section1">
-          <img src={img1} className="sub_story_section1_img" />
+          <img alt="" src={img1} className="sub_story_section1_img" />
         </div>
         <div className="sub_story_section2">
           <p className="sub_story_section_title1">SHOPIFY STORY</p>

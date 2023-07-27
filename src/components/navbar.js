@@ -12,7 +12,7 @@ function Navbar() {
     <div className="navbar">
         
         <Link to="/" className="nav_logo">
-            <img src={Logo} className="nav_logo_img"/>
+            <img alt="" src={Logo} className="nav_logo_img"/>
         furniro
         </Link>
         <ul className="navbar_page_links">
@@ -32,16 +32,16 @@ function Navbar() {
 
         <ul>
             <li>
-                <Link to=""><img src={userProfile} className="navbar_icon" /></Link>
+                <Link to=""><img alt="" src={userProfile} className="navbar_icon" /></Link>
             </li>
             <li>
-                <Link to=""><img src={search} className="navbar_icon"/></Link>
+                <Link to=""><img alt="" src={search} className="navbar_icon"/></Link>
             </li>
             <li>
-                <Link to=""><img src={wishlist} className="navbar_icon"/></Link>
+                <Link to=""><img alt="" src={wishlist} className="navbar_icon"/></Link>
             </li>
             <li>
-                <Link to="/cart"><img src={cart} className="navbar_icon"/></Link>
+                <Link to="/cart"><img alt="" src={cart} className="navbar_icon"/></Link>
             </li>
         </ul>
     </div>
