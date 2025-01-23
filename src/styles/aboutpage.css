@@ -1,4 +1,4 @@
-.about_banner_section{
+.about_banner_section {
     background-image: url(../images/ContactBanner.png);
     height: 45vh;
     width: 100%;
@@ -10,66 +10,132 @@
     align-items: center;
 }
 
-.about_title{
+.about_title {
     display: block;
     font-size: 40px;
     text-transform: capitalize;
+    text-align: center;
 }
 
-.about_logo{
+.about_logo {
     display: block;
     width: 70px;
     margin: 0 auto;
 }
 
-.about_story_section{
+.about_story_section {
     display: flex;
+    flex-wrap: wrap; /* Ensures wrapping for smaller screens */
     justify-content: space-evenly;
-    margin: 4rem;
+    margin: 4rem 2rem; /* Adjust margins for smaller screens */
     height: fit-content;
+    gap: 2rem; /* Adds spacing between sections */
 }
 
-.sub_story_section1{
+.sub_story_section1 {
     height: auto;
-    width: 80vh;
+    width: 100%; /* Full width on small screens */
+    max-width: 80vh; /* Limits width on larger screens */
 }
 
-.sub_story_section1_img{
-    width: 80vh;
+.sub_story_section1_img {
+    width: 100%; /* Full width of the container */
+    max-width: 80vh; /* Limits size for larger screens */
 }
 
-.sub_story_section2{
+.sub_story_section2 {
     margin: 1rem;
-    width: 80vh;
+    width: 100%; /* Full width on small screens */
+    max-width: 80vh; /* Limits width on larger screens */
     padding: 1rem;
 }
 
-.sub_story_section_title1{
+.sub_story_section_title1 {
     text-transform: capitalize;
     color: #B88E2F;
-}
-
-.sub_story_section_title2{
-    font-size: x-large;
-    font-weight: bold;
-}
-
-.sub_story_section_para{
-    text-align: justify;
-}
-
-.about_mission_section{
-    margin: 0 10rem 3rem 10rem ;
     text-align: center;
 }
 
-.about_mission_section_title1{
-    text-transform: uppercase;
-    color: #B88E2F;
-}
-
-.about_mission_section_title2{
+.sub_story_section_title2 {
     font-size: x-large;
     font-weight: bold;
+    text-align: center;
+}
 
+.sub_story_section_para {
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.about_mission_section {
+    margin: 0 2rem 3rem 2rem; /* Reduced margins for smaller screens */
+    text-align: center;
+}
+
+.about_mission_section_title1 {
+    text-transform: uppercase;
+    color: #B88E2F;
+    text-align: center;
+}
+
+.about_mission_section_title2 {
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Responsive adjustments for smaller devices */
+@media (max-width: 1024px) {
+    .about_story_section {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center;
+    }
+
+    .sub_story_section1, .sub_story_section2 {
+        width: 90%; /* Adjust width for tablets */
+    }
+
+    .about_title {
+        font-size: 32px; /* Smaller font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .about_banner_section {
+        height: 35vh; /* Reduce banner height */
+    }
+
+    .about_title {
+        font-size: 28px; /* Smaller font size for mobile */
+    }
+
+    .about_story_section {
+        margin: 2rem 1rem;
+    }
+
+    .sub_story_section1, .sub_story_section2 {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .sub_story_section1_img {
+        max-width: 100%; /* Ensure image fits container */
+    }
+
+    .about_mission_section {
+        margin: 0 1rem 2rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about_title {
+        font-size: 24px;
+    }
+
+    .sub_story_section_title2 {
+        font-size: large;
+    }
+
+    .sub_story_section_para {
+        font-size: 0.9rem; /* Smaller text for mobile */
+    }
 }

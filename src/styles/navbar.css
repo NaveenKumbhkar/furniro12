@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     background-color: white;
     color: black;
     display: flex;
@@ -6,13 +6,14 @@
     align-items: center;
     gap: 2rem;
     padding: 1rem 5rem;
-    position: fixed; /* Add fixed position */
-    top: 0; 
-    width: 92%;
-    z-index: 999;
+    position: fixed; /* Fix the navbar at the top */
+    top: 0;
+    width: 100%; /* Adjust width to fit the screen */
+    z-index: 999; /* Ensure it stays on top of other elements */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
 
-.navbar ul{
+.navbar ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -20,33 +21,95 @@
     gap: 2rem;
 }
 
-.navbar ul a{
+.navbar ul a {
     color: black;
     font-size: 18px;
     text-decoration: none;
     text-transform: capitalize;
+    transition: color 0.3s ease; /* Smooth hover transition */
 }
 
-.navbar ul a:hover{
-    color: #B88E2F;
+.navbar ul a:hover {
+    color: #B88E2F; /* Highlight on hover */
 }
 
-.nav_logo{
+.nav_logo {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     text-transform: capitalize;
     color: black;
-    font-size: 36px;
+    font-size: 24px; /* Adjust font size for better responsiveness */
     font-weight: bold;
-}
-.nav_logo_img{
-    height: 30px;
-    padding-right: .5rem;
+    gap: 0.5rem; /* Add spacing between logo text and image */
 }
 
-.navbar_icon{
+.nav_logo_img {
+    height: 30px;
+    padding-right: 0.5rem;
+}
+
+.navbar_icon {
     width: 28px;
+    cursor: pointer; /* Indicate clickable icon */
 }
 
 body {
-    padding-top: 70px; /* Adjust the value as needed */
+    padding-top: 70px; /* Prevent content from being hidden under navbar */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 1rem 2rem; /* Reduce padding for smaller screens */
+    }
+
+    .nav_logo {
+        font-size: 20px; /* Adjust logo text size */
+    }
+
+    .navbar ul {
+        gap: 1.5rem; /* Reduce spacing between menu items */
+    }
+
+    .navbar ul a {
+        font-size: 16px; /* Reduce menu text size */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start;
+        padding: 1rem 2rem;
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Stack menu items vertically */
+        width: 100%;
+        gap: 1rem;
+        margin-top: 1rem; /* Add spacing between logo and menu */
+    }
+
+    .nav_logo {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .nav_logo {
+        font-size: 16px;
+    }
+
+    .navbar ul {
+        gap: 0.75rem;
+    }
+
+    .navbar ul a {
+        font-size: 14px;
+    }
 }

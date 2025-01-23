@@ -1,4 +1,4 @@
-.cart_banner_section{
+.cart_banner_section {
     background-image: url(../images/ContactBanner.png);
     height: 45vh;
     width: 100%;
@@ -10,14 +10,60 @@
     align-items: center;
 }
 
-.cart_title{
+.cart_title {
     display: block;
     font-size: 40px;
     text-transform: capitalize;
+    text-align: center;
 }
 
-.cart_logo{
+.cart_logo {
     display: block;
     width: 70px;
     margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .cart_banner_section {
+        height: 40vh; /* Reduce height for tablets */
+        background-attachment: scroll; /* Prevent fixed background on smaller devices */
+    }
+
+    .cart_title {
+        font-size: 32px; /* Adjust font size for tablets */
+    }
+
+    .cart_logo {
+        width: 60px; /* Adjust logo size */
+    }
+}
+
+@media (max-width: 768px) {
+    .cart_banner_section {
+        height: 35vh; /* Further reduce height for mobile */
+    }
+
+    .cart_title {
+        font-size: 28px; /* Smaller font size for mobile */
+    }
+
+    .cart_logo {
+        width: 50px; /* Smaller logo size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .cart_banner_section {
+        height: 30vh; /* Compact height for small screens */
+        padding: 1rem; /* Add padding for content spacing */
+    }
+
+    .cart_title {
+        font-size: 24px; /* Adjust font size for better readability */
+    }
+
+    .cart_logo {
+        width: 40px; /* Reduce logo size further */
+    }
 }

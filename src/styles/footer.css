@@ -1,66 +1,159 @@
-
-
-.main_footer{
+.main_footer {
     border-top: grey solid 2px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
     margin-top: 1rem;
+    padding: 1rem; /* Add padding for spacing */
+    gap: 1rem; /* Add spacing between footer sections */
 }
 
-.sub_footer{
+.sub_footer {
     width: fit-content;
     height: fit-content;
     margin: 2rem 0;
-    padding: .25rem;
+    padding: 0.25rem;
+    flex: 1 1 200px; /* Flexible width for responsiveness */
+    text-align: center; /* Center align for smaller screens */
 }
 
-.footer_title{
+.footer_title {
     display: block;
     font-size: 32px;
     font-weight: bold;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
 }
 
-.footer_address{
+.footer_address {
     color: grey;
+    font-size: 14px; /* Adjust font size for better readability */
+    text-align: center;
 }
 
-.footer_link_title{
+.footer_link_title {
     display: block;
     color: grey;
-    margin: .75rem 0;
+    margin: 0.75rem 0;
+    font-size: 14px; /* Smaller font for links */
 }
 
-.sub_footer a{
+.sub_footer a {
     display: block;
     text-decoration: none;
     color: black;
     text-transform: capitalize;
+    font-size: 14px; /* Adjust font size */
+    margin: 0.5rem 0; /* Add spacing between links */
+    transition: color 0.3s ease;
 }
 
-.footer_email_subscription{
+.sub_footer a:hover {
+    color: grey; /* Add hover effect for better user experience */
+}
+
+.footer_email_subscription {
     outline: none;
     border: none;
     border-bottom: solid 2px grey;
+    padding: 0.5rem;
+    width: 100%; /* Full width on smaller devices */
+    max-width: 300px; /* Limit maximum width */
+    text-align: center;
 }
 
-.footer_subscription_button{
-    margin: 0 .35rem;
+.footer_subscription_button {
+    margin: 0.35rem;
     text-transform: uppercase;
     background: none;
     outline: none;
     border: none;
     font-weight: bold;
     border-bottom: solid 2px black;
+    cursor: pointer;
+    transition: color 0.3s ease, border-color 0.3s ease;
 }
 
-.footer_hr{
+.footer_subscription_button:hover {
+    color: grey;
+    border-bottom-color: grey;
+}
+
+.footer_hr {
     margin: 0 2rem;
     border-top: 1px solid grey;
+    width: 100%;
 }
 
-.footer_copywrite{
+.footer_copywrite {
     display: block;
     margin: 2rem;
     text-align: center;
+    font-size: 14px; /* Adjust font size for small devices */
+    color: grey;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .main_footer {
+        justify-content: center; /* Center align sections */
+    }
+
+    .footer_title {
+        font-size: 28px; /* Adjust title size */
+    }
+
+    .footer_address,
+    .footer_link_title,
+    .sub_footer a {
+        font-size: 13px; /* Reduce font size */
+    }
+
+    .footer_email_subscription {
+        max-width: 250px; /* Adjust input size */
+    }
+}
+
+@media (max-width: 768px) {
+    .main_footer {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center;
+    }
+
+    .sub_footer {
+        margin: 1.5rem 0; /* Adjust spacing */
+    }
+
+    .footer_title {
+        font-size: 24px; /* Smaller title size */
+    }
+
+    .footer_copywrite {
+        font-size: 12px; /* Reduce copyright text size */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer_title {
+        font-size: 20px; /* Compact title size */
+    }
+
+    .footer_address,
+    .footer_link_title,
+    .sub_footer a {
+        font-size: 12px; /* Further reduce font size */
+    }
+
+    .footer_email_subscription {
+        max-width: 200px; /* Compact input size */
+    }
+
+    .footer_subscription_button {
+        font-size: 12px; /* Adjust button size */
+        margin: 0.25rem;
+    }
+
+    .footer_copywrite {
+        margin: 1rem;
+    }
 }

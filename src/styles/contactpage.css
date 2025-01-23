@@ -1,4 +1,4 @@
-.contact_banner_section{
+.contact_banner_section {
     background-image: url(../images/ContactBanner.png);
     height: 45vh;
     width: 100%;
@@ -10,80 +10,88 @@
     align-items: center;
 }
 
-.contact_title{
+.contact_title {
     display: block;
     font-size: 40px;
     text-transform: capitalize;
+    text-align: center;
 }
 
-.contact_logo{
+.contact_logo {
     display: block;
     width: 70px;
     margin: 0 auto;
 }
 
-.contact_form_section{
-    margin: 2.5rem 0;
+.contact_form_section {
+    margin: 2.5rem 1rem; /* Adjust margin for better spacing on smaller screens */
 }
 
-.contact_form_title{
+.contact_form_title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1.5rem; /* Add spacing below the title section */
 }
-.contact_form_title_text{
+
+.contact_form_title_text {
     text-transform: capitalize;
     font-size: 27px;
     font-weight: bold;
 }
 
-.contact_form_para{
+.contact_form_para {
     text-align: center;
     margin: 0;
+    font-size: 16px; /* Adjust font size for readability */
 }
 
-.contact_main_form_div{
+.contact_main_form_div {
     display: flex;
     justify-content: space-evenly;
     margin: 2rem 0;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 1rem; /* Add spacing between form sections */
 }
 
-.contact_sub_form_div{
+.contact_sub_form_div {
     width: fit-content;
     height: fit-content;
+    flex: 1 1 300px; /* Adjust width dynamically for responsiveness */
 }
 
-.contact_sub_form_detail{
+.contact_sub_form_detail {
     flex-direction: column;
     margin: 1.5rem 0;
 }
 
-.detail_title{
+.detail_title {
     text-transform: capitalize;
     font-weight: bold;
 }
 
-.contact_input_section{
+.contact_input_section {
     flex-direction: column;
     margin: 1.25rem 0;
 }
 
-.label{
+.label {
     text-transform: capitalize;
     font-weight: bold;
 }
 
-.input{
+.input {
     padding: 1rem;
-    width: 350px;
+    width: 100%; /* Ensure the input takes up the available width */
+    max-width: 350px; /* Prevent inputs from becoming too wide */
     border: grey 1px solid;
     outline: none;
     border-radius: 10px;
-    margin-top: .75rem;
+    margin-top: 0.75rem;
 }
 
-.form_submit_button{
+.form_submit_button {
     background-color: #B88E2F;
     outline: none;
     border: none;
@@ -92,8 +100,93 @@
     font-size: 16px;
     text-transform: capitalize;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.form_submit_button:hover{
+.form_submit_button:hover {
     background-color: #fdb100;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .contact_banner_section {
+        height: 40vh; /* Reduce height for tablets */
+        background-attachment: scroll; /* Prevent fixed background for better performance */
+    }
+
+    .contact_title {
+        font-size: 32px; /* Adjust font size for tablets */
+    }
+
+    .contact_logo {
+        width: 60px; /* Adjust logo size */
+    }
+
+    .contact_form_section {
+        margin: 2rem 1rem; /* Adjust margins */
+    }
+
+    .contact_main_form_div {
+        flex-wrap: wrap; /* Wrap form sections on tablets */
+    }
+
+    .input {
+        max-width: 300px; /* Reduce input width for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .contact_banner_section {
+        height: 35vh; /* Further reduce height for smaller devices */
+        padding: 1rem; /* Add padding for smaller devices */
+    }
+
+    .contact_title {
+        font-size: 28px; /* Smaller font size for mobile */
+    }
+
+    .contact_logo {
+        width: 50px; /* Adjust logo size */
+    }
+
+    .contact_main_form_div {
+        justify-content: center; /* Center the form sections */
+    }
+
+    .form_submit_button {
+        padding: 1rem 3rem; /* Reduce button padding for smaller screens */
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact_banner_section {
+        height: 30vh; /* Compact height for small screens */
+    }
+
+    .contact_title {
+        font-size: 24px; /* Adjust font size for small screens */
+    }
+
+    .contact_logo {
+        width: 40px; /* Smaller logo size */
+    }
+
+    .contact_form_title_text {
+        font-size: 22px; /* Smaller form title */
+    }
+
+    .contact_form_para {
+        font-size: 14px; /* Smaller font for paragraphs */
+    }
+
+    .input {
+        max-width: 100%; /* Input takes full width */
+    }
+
+    .form_submit_button {
+        width: 100%; /* Full-width button for small screens */
+        padding: 0.75rem; /* Compact padding */
+    }
 }
